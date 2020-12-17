@@ -20,6 +20,7 @@ function toogle(){
     menuItems.classList.toggle("open");
 }
 
-if (navigator.userAgent.match(/Mobile/)) {
-    document.getElementByClass('changeMe').innerHTML = 'AGUSTIN';
+if (navigator.userAgent.match(/Desktop/)) {
+    document.getElementById('changeMe').innerHTML = 'AGUSTIN';
+    console.log("hola")
 }
