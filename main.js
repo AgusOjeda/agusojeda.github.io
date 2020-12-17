@@ -19,3 +19,7 @@ function toogle(){
     menuBtn.classList.toggle("open");
     menuItems.classList.toggle("open");
 }
+
+if (navigator.userAgent.match(/Mobile/)) {
+    document.getElementByClass('changeMe').innerHTML = 'AGUSTIN';
+}
