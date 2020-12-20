@@ -1,6 +1,7 @@
 const menuBtn = document.querySelector(".menu-btn");
 const menuItems = document.querySelector(".menu-items");
 const menuItem = document.querySelectorAll(".menu-item");
+const btnDark = document.querySelector("home");
 //Main toggle
 menuBtn.addEventListener('click', () => {
     toogle();
@@ -20,7 +21,15 @@ function toogle(){
     menuItems.classList.toggle("open");
 }
 
-if (navigator.userAgent.match(/Desktop/)) {
-    document.getElementById('changeMe').innerHTML = 'AGUSTIN';
-    console.log("hola")
+btnDark.addEventListener('click',() =>{
+    console.log("funciona");
+    if(btnDark.classList.contains("hero-section-dark")){
+        changeStyle();
+    }
+})
+
+function changeStyle(){
+    console.log("funciona2");
+    btnDark.classList.toggle("hero-section-dark");
 }
+// document.querySelector(".hero-section").style.backgroundColor = this.darkMode ? "#1d0229" : "#DFDBE5";
